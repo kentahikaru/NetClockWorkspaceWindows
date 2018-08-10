@@ -1,0 +1,47 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 18, 2017
+ *      Author: sandi
+ */
+
+#include "stm32f7xx_gpio.h"
+
+int main(void)
+{
+	uint32_t i = 0;
+	GPIO_InitTypeDef gpio;
+
+	GPIO_StructInit(&gpio);
+
+	gpio.GPIO_Mode = GPIO_Mode_OUT;
+	gpio.GPIO_OType = GPIO_OType_PP;
+	gpio.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	gpio.GPIO_Speed = GPIO_Low_Speed;
+	gpio.GPIO_Pin = GPIO_Pin_All;
+
+
+	GPIO_Init(GPIOA,&gpio);
+	GPIO_Init(GPIOB,&gpio);
+	GPIO_Init(GPIOC,&gpio);
+	GPIO_Init(GPIOD,&gpio);
+	GPIO_Init(GPIOE,&gpio);
+
+
+	while(1)
+	{
+		GPIO_ToggleBits(GPIOA,GPIO_Pin_All);
+		GPIO_ToggleBits(GPIOB,GPIO_Pin_All);
+		GPIO_ToggleBits(GPIOC,GPIO_Pin_All);
+		GPIO_ToggleBits(GPIOD,GPIO_Pin_All);
+		GPIO_ToggleBits(GPIOE,GPIO_Pin_All);
+
+
+
+		for(i = 0; i < 100000; i++)
+			;
+	}
+
+	return 0;
+}
+

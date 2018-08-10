@@ -1,0 +1,24 @@
+14:33:59 **** Build of configuration Debug for project AC6TestProject ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/AC6TestProject/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/AC6TestProject/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: ../startup/sysmem.c
+Invoking: MCU GCC Compiler
+/mnt/h/arm/SWTest/AC6TestProject/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -DSTM32F746G_DISCO -DSTM32F746NGHx -DSTM32F7 -DSTM32 -DDEBUG -I"/mnt/h/arm/SWTest/AC6TestProject/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+Finished building: ../startup/sysmem.c
+ 
+Building target: AC6TestProject.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -T"/mnt/h/arm/SWTest/AC6TestProject/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AC6TestProject.elf" @"objects.list"   -lm
+startup/startup_stm32.o: In function `LoopFillZerobss':
+/mnt/h/arm/SWTest/AC6TestProject/Debug/../startup/startup_stm32.s:78: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:35: AC6TestProject.elf] Error 1
+
+14:33:59 Build Finished (took 864ms)
+

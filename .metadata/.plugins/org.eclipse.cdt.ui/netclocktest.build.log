@@ -1,0 +1,11 @@
+22:31:56 **** Incremental Build of configuration Debug for project netclocktest ****
+make all 
+Building file: ../startup/startup_stm32f746xx.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/netclock_cubemx_test/netclocktest/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -g -o "startup/startup_stm32f746xx.o" "../startup/startup_stm32f746xx.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:18: startup/startup_stm32f746xx.o] Error 127
+
+22:31:56 Build Finished (took 235ms)
+

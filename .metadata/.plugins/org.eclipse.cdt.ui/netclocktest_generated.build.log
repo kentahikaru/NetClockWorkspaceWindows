@@ -1,0 +1,6 @@
+22:11:32 **** Build of configuration Build (GNU) for project netclocktest_generated ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+
+22:11:32 Build Finished (took 75ms)
+

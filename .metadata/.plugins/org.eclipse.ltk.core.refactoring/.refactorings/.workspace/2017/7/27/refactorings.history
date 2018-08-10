@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;netclocktest_generated&apos;" deleteContents="true" description="Delete resource &apos;netclocktest_generated&apos;" element1="/netclocktest_generated" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1499465373067"/>&#x0A;<refactoring comment="Delete resource &apos;netclocktest_generated&apos;" deleteContents="false" description="Delete resource &apos;netclocktest_generated&apos;" element1="/netclocktest_generated" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1499465504756"/>
+</session>

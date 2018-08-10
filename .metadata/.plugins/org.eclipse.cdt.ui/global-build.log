@@ -1,0 +1,273 @@
+15:34:09 **** Clean-only build of configuration Debug for project NetClock ****
+make clean 
+rm -rf *
+ 
+15:48:03 **** Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: ../startup/sysmem.c
+Invoking: MCU GCC Compiler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -DSTM32F746G_DISCO -DSTM32F746NGHx -DSTM32F7 -DSTM32 -DDEBUG -DSTM32F746xx -I"/mnt/h/arm/SWTest/NetClock/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include" -I"/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include" -O0 -g3 -Wall -fmessage-length=0 -v -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+Using built-in specs.
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native --libexecdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/lib --infodir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/arm-none-eabi --build=x86_64-linux-gnu --host=x86_64-linux-gnu --with-gmp=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for ARM Embedded Processors 6-2017-q2-update' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'startup/sysmem.d' '-MT' 'startup/sysmem.o' '-o' 'startup/sysmem.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/cc1 -quiet -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -imultilib thumb/v7e-m/fpv5-sp/hard -iprefix /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/ -isysroot /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi -MMD startup/sysmem.d -MF startup/sysmem.d -MP -MT startup/sysmem.o -dD -D__USES_INITFINI__ -D STM32F746G_DISCO -D STM32F746NGHx -D STM32F7 -D STM32 -D DEBUG -D STM32F746xx ../startup/sysmem.c -quiet -dumpbase sysmem.c -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -auxbase-strip startup/sysmem.o -g3 -O0 -Wall -version -fmessage-length=0 -ffunction-sections -o /tmp/ccHya4Xn.s
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include-fixed"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /mnt/h/arm/SWTest/NetClock/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include
+ /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 641331eaad782cbf47c35b6517b58088
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'startup/sysmem.d' '-MT' 'startup/sysmem.o' '-o' 'startup/sysmem.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/as -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -meabi=5 -o startup/sysmem.o /tmp/ccHya4Xn.s
+GNU assembler version 2.28.0 (arm-none-eabi) using BFD version (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 2.28.0.20170620
+COMPILER_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'startup/sysmem.d' '-MT' 'startup/sysmem.o' '-o' 'startup/sysmem.o'
+Finished building: ../startup/sysmem.c
+ 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -DSTM32F746G_DISCO -DSTM32F746NGHx -DSTM32F7 -DSTM32 -DDEBUG -DSTM32F746xx -I"/mnt/h/arm/SWTest/NetClock/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include" -I"/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include" -O0 -g3 -Wall -fmessage-length=0 -v -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Using built-in specs.
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native --libexecdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/lib --infodir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/arm-none-eabi --build=x86_64-linux-gnu --host=x86_64-linux-gnu --with-gmp=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for ARM Embedded Processors 6-2017-q2-update' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/main.d' '-MT' 'src/main.o' '-o' 'src/main.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/cc1 -quiet -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -imultilib thumb/v7e-m/fpv5-sp/hard -iprefix /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/ -isysroot /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi -MMD src/main.d -MF src/main.d -MP -MT src/main.o -dD -D__USES_INITFINI__ -D STM32F746G_DISCO -D STM32F746NGHx -D STM32F7 -D STM32 -D DEBUG -D STM32F746xx ../src/main.c -quiet -dumpbase main.c -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -auxbase-strip src/main.o -g3 -O0 -Wall -version -fmessage-length=0 -ffunction-sections -o /tmp/cc2TZBCZ.s
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include-fixed"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /mnt/h/arm/SWTest/NetClock/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include
+ /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 641331eaad782cbf47c35b6517b58088
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/main.d' '-MT' 'src/main.o' '-o' 'src/main.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/as -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -meabi=5 -o src/main.o /tmp/cc2TZBCZ.s
+GNU assembler version 2.28.0 (arm-none-eabi) using BFD version (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 2.28.0.20170620
+COMPILER_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/main.d' '-MT' 'src/main.o' '-o' 'src/main.o'
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32f7xx_it.c
+Invoking: MCU GCC Compiler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -DSTM32F746G_DISCO -DSTM32F746NGHx -DSTM32F7 -DSTM32 -DDEBUG -DSTM32F746xx -I"/mnt/h/arm/SWTest/NetClock/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include" -I"/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include" -O0 -g3 -Wall -fmessage-length=0 -v -ffunction-sections -c -MMD -MP -MF"src/stm32f7xx_it.d" -MT"src/stm32f7xx_it.o" -o "src/stm32f7xx_it.o" "../src/stm32f7xx_it.c"
+Using built-in specs.
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native --libexecdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/lib --infodir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/arm-none-eabi --build=x86_64-linux-gnu --host=x86_64-linux-gnu --with-gmp=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for ARM Embedded Processors 6-2017-q2-update' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/stm32f7xx_it.d' '-MT' 'src/stm32f7xx_it.o' '-o' 'src/stm32f7xx_it.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/cc1 -quiet -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -imultilib thumb/v7e-m/fpv5-sp/hard -iprefix /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/ -isysroot /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi -MMD src/stm32f7xx_it.d -MF src/stm32f7xx_it.d -MP -MT src/stm32f7xx_it.o -dD -D__USES_INITFINI__ -D STM32F746G_DISCO -D STM32F746NGHx -D STM32F7 -D STM32 -D DEBUG -D STM32F746xx ../src/stm32f7xx_it.c -quiet -dumpbase stm32f7xx_it.c -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -auxbase-strip src/stm32f7xx_it.o -g3 -O0 -Wall -version -fmessage-length=0 -ffunction-sections -o /tmp/ccQABuhJ.s
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include-fixed"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /mnt/h/arm/SWTest/NetClock/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include
+ /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 641331eaad782cbf47c35b6517b58088
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/stm32f7xx_it.d' '-MT' 'src/stm32f7xx_it.o' '-o' 'src/stm32f7xx_it.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/as -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -meabi=5 -o src/stm32f7xx_it.o /tmp/ccQABuhJ.s
+GNU assembler version 2.28.0 (arm-none-eabi) using BFD version (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 2.28.0.20170620
+COMPILER_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/stm32f7xx_it.d' '-MT' 'src/stm32f7xx_it.o' '-o' 'src/stm32f7xx_it.o'
+Finished building: ../src/stm32f7xx_it.c
+ 
+Building file: ../src/system_stm32f7xx.c
+Invoking: MCU GCC Compiler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -DSTM32F746G_DISCO -DSTM32F746NGHx -DSTM32F7 -DSTM32 -DDEBUG -DSTM32F746xx -I"/mnt/h/arm/SWTest/NetClock/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include" -I"/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc" -I"/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include" -O0 -g3 -Wall -fmessage-length=0 -v -ffunction-sections -c -MMD -MP -MF"src/system_stm32f7xx.d" -MT"src/system_stm32f7xx.o" -o "src/system_stm32f7xx.o" "../src/system_stm32f7xx.c"
+Using built-in specs.
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native --libexecdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/lib --infodir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/install-native/arm-none-eabi --build=x86_64-linux-gnu --host=x86_64-linux-gnu --with-gmp=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-6-buildandreg-223_20170621_1498033910/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for ARM Embedded Processors 6-2017-q2-update' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/system_stm32f7xx.d' '-MT' 'src/system_stm32f7xx.o' '-o' 'src/system_stm32f7xx.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/cc1 -quiet -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -imultilib thumb/v7e-m/fpv5-sp/hard -iprefix /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/ -isysroot /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi -MMD src/system_stm32f7xx.d -MF src/system_stm32f7xx.d -MP -MT src/system_stm32f7xx.o -dD -D__USES_INITFINI__ -D STM32F746G_DISCO -D STM32F746NGHx -D STM32F7 -D STM32 -D DEBUG -D STM32F746xx ../src/system_stm32f7xx.c -quiet -dumpbase system_stm32f7xx.c -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -auxbase-strip src/system_stm32f7xx.o -g3 -O0 -Wall -version -fmessage-length=0 -ffunction-sections -o /tmp/ccnvwMBt.s
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/include-fixed"
+ignoring duplicate directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /mnt/h/arm/SWTest/NetClock/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include
+ /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc
+ /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C11 (GNU Tools for ARM Embedded Processors 6-2017-q2-update) version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (arm-none-eabi)
+	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 641331eaad782cbf47c35b6517b58088
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/system_stm32f7xx.d' '-MT' 'src/system_stm32f7xx.o' '-o' 'src/system_stm32f7xx.o'
+ /home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/as -v -I /mnt/h/arm/SWTest/NetClock/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include -I /mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc -I /mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -meabi=5 -o src/system_stm32f7xx.o /tmp/ccnvwMBt.s
+GNU assembler version 2.28.0 (arm-none-eabi) using BFD version (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 2.28.0.20170620
+COMPILER_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/thumb/v7e-m/fpv5-sp/hard/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/:/home/sandi/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m7' '-mthumb' '-mfloat-abi=hard' '-mfpu=fpv5-sp-d16' '-D' 'STM32F746G_DISCO' '-D' 'STM32F746NGHx' '-D' 'STM32F7' '-D' 'STM32' '-D' 'DEBUG' '-D' 'STM32F746xx' '-I' '/mnt/h/arm/SWTest/NetClock/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/BSP/STM32746G-Discovery_SPL' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Device/ST/STM32F7xx/Include' '-I' '/mnt/h/arm/SWTest/NetClock/lib/STM32F7xx_StdPeriph_Driver/inc' '-I' '/mnt/h/arm/SWTest/NetClock/lib/Driver/CMSIS/Include' '-O0' '-g3' '-Wall' '-fmessage-length=0' '-v' '-ffunction-sections' '-c' '-MMD' '-MP' '-MF' 'src/system_stm32f7xx.d' '-MT' 'src/system_stm32f7xx.o' '-o' 'src/system_stm32f7xx.o'
+Finished building: ../src/system_stm32f7xx.c
+ 
+Building target: NetClock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -T"/mnt/h/arm/SWTest/NetClock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "NetClock.elf" @"objects.list"   -lm
+src/main.o: In function `main':
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:15: undefined reference to `GPIO_StructInit'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:24: undefined reference to `GPIO_Init'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:25: undefined reference to `GPIO_Init'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:26: undefined reference to `GPIO_Init'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:27: undefined reference to `GPIO_Init'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:28: undefined reference to `GPIO_Init'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:33: undefined reference to `GPIO_ToggleBits'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:34: undefined reference to `GPIO_ToggleBits'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:35: undefined reference to `GPIO_ToggleBits'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:36: undefined reference to `GPIO_ToggleBits'
+/mnt/h/arm/SWTest/NetClock/Debug/../src/main.c:37: undefined reference to `GPIO_ToggleBits'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:36: NetClock.elf] Error 1
+21:54:58 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:12:22 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:13:28 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:20:26 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:26:12 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:28:22 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:28:51 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+22:29:01 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
+20:02:57 **** Incremental Build of configuration Debug for project NetClock ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/mnt/h/arm/SWTest/NetClock/Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -I"/mnt/h/arm/SWTest/NetClock/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/bin/sh: /mnt/orage/software/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.13.1.201707031232/tools/compiler/bin/arm-none-eabi-as: No such file or directory
+make: *** [startup/subdir.mk:30: startup/startup_stm32.o] Error 127
