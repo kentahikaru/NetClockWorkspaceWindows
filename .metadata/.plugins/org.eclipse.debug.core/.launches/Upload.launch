@@ -3,6 +3,6 @@
 <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
 <listEntry value="org.eclipse.ui.externaltools.launchGroup"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="/usr/bin/st-flash"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="write /mnt/h/arm/SWTest/NetClock/obj/NetClock.bin 0x8000000"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="c:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility\ST-LINK_CLI.exe"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-V -P c:\github\NetClockWorkspace\NetClock\obj\NetClock.hex"/>
 </launchConfiguration>

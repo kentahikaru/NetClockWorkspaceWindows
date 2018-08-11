@@ -1,12 +1,14 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:erase chip,org.eclipse.launchbar.core.descriptorType.default\:test,org.eclipse.launchbar.core.descriptorType.default\:make clean,org.eclipse.launchbar.core.descriptorType.default\:make,org.eclipse.launchbar.core.descriptorType.default\:Upload,org.eclipse.launchbar.core.descriptorType.default\:OpenOCD,org.eclipse.launchbar.core.descriptorType.default\:NetClock Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:NetClock Debug,org.eclipse.launchbar.core.descriptorType.default\:OpenOCD,org.eclipse.launchbar.core.descriptorType.default\:Upload,org.eclipse.launchbar.core.descriptorType.default\:Erase chip
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:NetClock\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:NetClock\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:OpenOCD/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Upload/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:erase\ chip/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:erase\ chip/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:make\ clean/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:make\ clean/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:make/activeLaunchMode=run

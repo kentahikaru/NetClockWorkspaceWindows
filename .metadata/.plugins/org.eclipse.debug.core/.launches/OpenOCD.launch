@@ -19,7 +19,7 @@
 <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="-f board/stm32f7discovery.cfg -c reset_config"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="/usr/bin/openocd"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="c:\arm\OpenOCD-20180728\bin\openocd.exe"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="NetClock"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="fr.ac6.managedbuild.config.gnu.cross.exe.debug.996353273"/>
